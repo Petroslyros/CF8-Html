@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h3>Tables in HTML</h3>
+
+  <table>
+    <caption>Lessons Program</caption>
+    <tr>
+      <td>Μάθημα</td>
+        <td>Καθηγητής</td>
+        <td>Μέρα/Ώρα</td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td>Thanasis</td>
+      <td>Monday 18:00 - 21:00</td>
+    </tr>
+    <tr>
+      <td>HTML</td>
+      <td>Markos</td>
+      <td>Thursday 18:00 - 21:00</td>
+    </tr>
+  <!-- TABLEE WITH HEADERS -->
+  </table>
+  <table><p>Table with headers</p>
+  <tr>
+    <th>Lesson</th>
+    <th>Teacher</th>
+    <th>Day/Time</th>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>Thanasis</td>
+    <td>Monday</td>
+  </tr>
+</table>
+  <p>Table wit thead, tbody, tfoot</p>
+  <table>
+    <thead>
+      <th>Lesson </th>
+      <th>Teacher</th>
+      <th>Day</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Java</td>
+        <td>Thanasis</td>
+        <td>Monday 18:00</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Markos</td>
+        <td>Thursday</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Programming</td>
+        <td>Coding Factory</td>
+        <td>Days</td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Table Colspan</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Lesson</th>
+        <th>Teacher</th>
+        <th>Day</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <!-- <td>Learning Programming</td>
+        <td>-</td>
+        <td>-</td> -->
+        <td colspan="3">Learning Programming</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Thanasis</td>
+        <td>Monday</td>
+      </tr>
+      <tr>
+        <td rowspan="2">HTML</td>
+        <td>Markos</td>
+        <td>Thursday</td>
+      </tr>
+      <tr>
+        <!-- <td>HTML</td> -->
+        <td>Markos</td>
+        <td>Froday</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- table>tr*3>td*4 -->
+  <table>
+    <tr>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+    </tr>
+    <tr>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+    </tr>
+    <tr>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+      <td>Petros</td>
+    </tr>
+  </table>
+  <!-- ΕΠΙΛΟΓΗ ΠΟΛΛΑΠΛΩΝ ΓΡΑΜΜΩ ΜΕ ALT 
+    1.. alt + mouse click-->
+</body>
+</html>
