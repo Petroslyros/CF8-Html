@@ -1,0 +1,31 @@
+body{
+border: solid aqua;
+}
+
+.container{
+  width: 90%;
+  margin-left: 10px;
+}
+.name{
+  color:steelblue;
+  border-bottom: 1px solid steelblue;
+}
+.occupation{
+  color: gray;
+}
+.container-info{
+  background-color: lightgray;
+  border: solid purple;
+  border-width: 4px;
+  margin-right: 70%;
+}
+
+/* .container-info > ul > :first-child{
+  color: orange;
+} */
+.email{
+  color: rgb(255, 140, 0);
+}
+.web{
+  color: rgb(255, 140, 0);
+}
