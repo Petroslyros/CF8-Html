@@ -1,0 +1,14 @@
+p{
+  color: blue;
+}
+
+#textColor{
+  color: yellow;
+}
+.text-color{
+  color: green;
+}
+
+p{
+  color: red!important;
+}

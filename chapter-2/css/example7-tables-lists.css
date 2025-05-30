@@ -1,0 +1,53 @@
+.container {
+  width: 800px;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+  /* width: 500px; */
+}
+th {
+  height: 70px;
+}
+
+td {
+  text-align: center;
+}
+
+thead{
+  background-color: lightgray;
+}
+
+tbody tr :nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr :nth-child(odd){
+  background-color: #333;
+  color: white;
+}
+
+tbody tr :hover {
+background-color: lightblue;
+}
+
+ul {
+ background-color: lightblue;
+ width: 500px;
+}
+
+ul li {
+  background-color: #cc35ff;
+  color: darkblue;
+}
+
+Li {
+  list-style-type: square;
+}
