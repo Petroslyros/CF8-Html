@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .container {
   width: 800px;
   border: 1px solid black;
@@ -50,4 +54,5 @@ ul li {
 
 Li {
   list-style-type: square;
+  list-style-position: inside;
 }
