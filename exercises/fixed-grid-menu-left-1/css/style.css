@@ -13,20 +13,22 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 150px;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  
-}
+/* header {
+  flex: 25%
+} */
 
 main {
-  
+  /* flex: 75%; */
   height: 100vh;
   overflow: auto;
+  margin-top: 100px;
 }
 
 /* Displays */
@@ -45,6 +47,34 @@ main {
 
 .flex-row {
   flex-direction: row;
+}
+
+/* Bars and Styling */
+.humb-x {
+  display: none;
+}
+
+.side-menu:checked ~ label > .humb {
+  display: none;
+}
+
+.side-menu:checked nav {
+  display: none;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ label > .humb-x {
+  display: block;
+}
+
+.humb {
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+  display: none;
 }
 
 /* Colors */
@@ -114,5 +144,17 @@ main {
   header {
     position: fixed;
     width: 100%;
+  }
+
+  main {
+    margin-top: 100px;
+  }
+
+  .humb {
+    display:block;
+  }
+
+  .humb-x {
+    display: block;
   }
 }
