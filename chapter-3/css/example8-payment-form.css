@@ -21,3 +21,20 @@
 .p-10{
     padding: 10px;
 }
+/* Filedset */
+fieldset {
+    width: 250px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+input {
+width: 250px;
+}
+
+label span {
+    display: inline-block;
+    width: 140px;
+    /* border: 1px solid black; */
+    text-align: right;
+}

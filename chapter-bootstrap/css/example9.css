@@ -1,0 +1,32 @@
+.bg-dark {
+  background-color: #006994!important;
+}
+
+header {
+  background-image: url(../../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 800px;
+}
+
+.line {
+  background-color: #006994;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card {
+  border: none;
+}
+
+footer a {
+  color:white;
+}
