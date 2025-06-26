@@ -8,6 +8,14 @@
   <title>Pay your bills</title>
 </head>
 <body>
+  <style>
+  .custom-hover:hover {
+    color: orange !important;  /* Change to any color you want */
+    text-decoration: none; /* Optional for hover effect */
+  }
+</style>
+
+  
 
   <!-- navbar -->
   
@@ -26,13 +34,13 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav justify-content-center">
           <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#phone" class="nav-link text-white fw-bold">
+            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#phone" class="nav-link text-white fw-bold custom-hover">
               <span>
                 <i class="bi bi-telephone-fill text-success"></i>Phone Bill</span>
               </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#electricity" class="nav-link text-white fw-bold">
+            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#electricity" class="nav-link text-white fw-bold custom-hover">
               <span>
                 <i class="bi bi-lightning-charge-fill text-warning"></i>
                 Electric Bill
@@ -40,7 +48,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#internet" class="nav-link text-white fw-bold">
+            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#internet" class="nav-link text-white fw-bold custom-hover">
               <span>
                 <i class="bi bi bi-wifi text-primary"></i>
                 Internet Bill
@@ -48,7 +56,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold">
+            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold custom-hover">
               <span>
                 <i class="bi bi-droplet-fill text-info"></i>
                 Water Bill
@@ -56,7 +64,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold">
+            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold custom-hover">
               <span>
                 <i class="bi bi-exclamation-circle text-danger"></i>
                 Other
@@ -82,7 +90,7 @@
           </h1>
         </div>
         <div class="col-md-5 text-center d-none d-md-block">
-          <img src="../img/Bills-to-Pay.jpg" alt="">
+          <img src="../../img/Bills-to-Pay.jpg" alt="">
         </div>
       </div>
     </div>
