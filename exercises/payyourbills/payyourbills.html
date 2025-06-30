@@ -1,215 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pay your bills</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    .custom-hover:hover {
+      color: orange !important;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <style>
-  .custom-hover:hover {
-    color: orange !important;  /* Change to any color you want */
-    text-decoration: none; /* Optional for hover effect */
-  }
-</style>
 
-  
-
-  <!-- navbar -->
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
-    <div class="container-lg">
-      <!-- navbard title -->
-      <a href="" class="navbar-brand">
-        <span class="text-primary fw-bold">
-          <i class="bi bi-receipt"></i>
-          Pay your bills!
-        </span>       
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-        <ul class="navbar-nav justify-content-center">
-          <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#phone" class="nav-link text-white fw-bold custom-hover">
-              <span>
-                <i class="bi bi-telephone-fill text-success"></i>Phone Bill</span>
-              </a>
-          </li>
-          <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#electricity" class="nav-link text-white fw-bold custom-hover">
-              <span>
-                <i class="bi bi-lightning-charge-fill text-warning"></i>
-                Electric Bill
-              </span>          
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#internet" class="nav-link text-white fw-bold custom-hover">
-              <span>
-                <i class="bi bi bi-wifi text-primary"></i>
-                Internet Bill
-              </span>          
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold custom-hover">
-              <span>
-                <i class="bi bi-droplet-fill text-info"></i>
-                Water Bill
-              </span>          
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-bs-toggle="modal" data-bs-target="#reg-modal" href="#water" class="nav-link text-white fw-bold custom-hover">
-              <span>
-                <i class="bi bi-exclamation-circle text-danger"></i>
-                Other
-              </span>          
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- main intro and image -->
-
-  <div>
-    <div class="container-lg mt-5 pt-5">
-      <div class="row g-4 justify-content-center align-items-center">
-        <div class="col-md-5 text-center text-md-start">
-          <h1>
-            <div class="display-5">Always forgetting your bills?</div>
-            <p class="lead my-4 tex-muted">
-              This website will help you, by sending notifications out to your email so you won't forget your bills again! <strong>You WILL thank us later!</strong>  
-            </p>
-          </h1>
-        </div>
-        <div class="col-md-5 text-center d-none d-md-block">
-          <img src="../../img/Bills-to-Pay.jpg" alt="">
-        </div>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 fixed-top">
+  <div class="container-lg">
+    <a class="navbar-brand text-primary fw-bold" href="#">
+      <i class="bi bi-receipt"></i> Pay your bills!
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 justify-content-center">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#rem-modal">
+            <i class="bi bi-telephone-fill text-success"></i> Phone Bill
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#rem-modal">
+            <i class="bi bi-lightning-charge-fill text-warning"></i> Electric Bill
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#rem-modal">
+            <i class="bi bi-wifi text-primary"></i> Internet Bill
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#rem-modal">
+            <i class="bi bi-droplet-fill text-info"></i> Water Bill
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#rem-modal">
+            <i class="bi bi-exclamation-circle text-danger"></i> Other
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-danger fw-bold custom-hover" data-bs-toggle="modal" data-bs-target="#reg-modal">Register</a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-  <!-- line -->
+<!-- Main content -->
+<div class="container-lg mt-5 pt-5">
+  <div class="row g-4 justify-content-center align-items-center">
+    <div class="col-md-5 text-center text-md-start">
+      <h1 class="display-5">Always forgetting your bills?</h1>
+      <p class="lead my-4 text-muted">
+        This website will help you, by sending notifications out to your email so you won't forget your bills again! <strong>You WILL thank us later!</strong>
+      </p>
+    </div>
+    <div class="col-md-5 text-center d-none d-md-block">
+      <img src="../../img/Bills-to-Pay.jpg" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<!-- Line -->
 <div class="container-lg col-5 line my-5">
   <hr>
 </div>
 
-  <!-- form  -->
-  <div class="container-lg mt-5">
-    <div class="text-center">
-      <h2>Reminder Form</h2>
-      <p class="lead">Please fill out the form below in order for us to send you the email! </p>
+<!-- Reminder Form -->
+<div class="container-lg mt-5">
+  <div class="text-center">
+    <h2>Reminder Form</h2>
+    <p class="lead">Please fill out the form below in order for us to send you the email!</p>
+  </div>
+  <div class="row justify-content-center my-5">
+    <div class="col-lg-6">
+      <form>
+        <label for="email" class="form-label">Email Address:</label>
+        <div class="mb-4 input-group">
+          <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+          <input type="email" class="form-control" id="email" placeholder="e.g. johndoe@example.com">
+        </div>
+
+        <label for="name" class="form-label">Name</label>
+        <div class="input-group mb-4">
+          <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+          <input type="text" class="form-control" id="name" placeholder="e.g. John">
+        </div>
+
+        <label for="subject" class="form-label">What is your bill about?</label>
+        <div class="input-group mb-4">
+          <span class="input-group-text"><i class="bi bi-chat-right-dots-fill"></i></span>
+          <select id="subject" class="form-select">
+            <option selected>Electricity</option>
+            <option>Water</option>
+            <option>Internet</option>
+            <option>Phone</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <label for="due-date" class="form-label">Due Date</label>
+        <div class="input-group mb-4">
+          <span class="input-group-text"><i class="bi bi-calendar-event-fill"></i></span>
+          <input type="date" class="form-control" id="due-date">
+        </div>
+
+        <div class="form-floating mb-4 mt-5">
+          <textarea class="form-control" style="height:140px" id="notes"></textarea>
+          <label for="notes">Your notes</label>
+        </div>
+
+        <div class="mb-4 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
     </div>
+  </div>
+</div>
 
-    <div class="row justify-content-center my-5">
-      <div class="col-lg-6">
-        <form>
-          <label for="email" class="form-label">Email Address: </label>
-          <div class="mb-4 input-group">
-            <span class="input-group-text">
-              <i class="bi bi-envelope-fill"></i>
-            </span>
-            <input type="email" class="form-control" id="email" placeholder="e.g. johndoe@example.com">
-          </div>
-          
-          <label for="name" class="form-label">Name</label>
-          <div class="input-group mb-4">
-            <span class="input-group-text">
-              <i class="bi bi-person-fill"></i>
-            </span>
-            <input type="text" class="form-control" id="name" placeholder="e.g. John">
-          </div>
+<!-- Reminder Modal -->
+<div class="modal fade" id="rem-modal" tabindex="-1" aria-labelledby="rem-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rem-modal-label">Set up a quick reminder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label for="modal-email" class="form-label">Your email address:</label>
+        <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+        <label for="modal-name" class="form-label mt-3">Your Name:</label>
+        <input type="text" class="form-control" id="modal-name" placeholder="e.g. John">
 
-          <label for="subject" class="form-label">What is your bill about?</label>
-            <div class="input-group mb-4">
-              <span class="input-group-text">
-                <i class="bi bi-chat-right-dots-fill"></i>
-              </span>
-              <select id="subject" class="form-select">
-              <option value="electric" selected>Electricity</option>
-              <option value="water" >Water</option>
-              <option value="internet" >Internet</option>
-              <option value="phone" >Phone</option>
-              <option value="other" >Other</option>
-            </select>
-            </div>
+        <label for="modal-subject" class="form-label mt-3">What is your bill about?</label>
+        <select id="modal-subject" class="form-select mb-3">
+          <option selected>Electricity</option>
+          <option>Water</option>
+          <option>Internet</option>
+          <option>Phone</option>
+          <option>Other</option>
+        </select>
 
-            <label for="due-date" class="form-label">Due Date</label>
-              <div class="input-group mb-4">
-                <span class="input-group-text">
-                  <i class="bi bi-calendar-event-fill"></i>
-                </span>
-                <input type="date" class="form-control" id="due-date">
-              </div>
-
-
-            <div class="form-floating mb-4 mt-5">
-              <textarea class="form-control" style="height:140px" id="notes"></textarea>
-              <label for="notes">Your notes</label>
-            </div>
-            <div class="mb-4 text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-
-        </form>
+        <label for="modal-date" class="form-label mt-3">Due Date</label>
+        <input type="date" class="form-control" id="modal-date">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- modal itself -->
-  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-title">Set up a quick reminder</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <label for="modal-email" class="form-label">Your email address:</label>
-          <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
-          <label for="modal-name" class="form-label">Your Name:</label>
-          <input type="text" class="form-control" id="modal-name" placeholder="e.g. John">
-
-          <label for="subject" class="form-label">What is your bill about?</label>
-            <div class="input-group mb-4">
-              <span class="input-group-text">
-                <i class="bi bi-chat-right-dots-fill"></i>
-              </span>
-              <select id="subject" class="form-select">
-              <option value="electric" selected>Electricity</option>
-              <option value="water" >Water</option>
-              <option value="internet" >Internet</option>
-              <option value="phone" >Phone</option>
-              <option value="other" >Other</option>
-            </select>
-
-            <label for="due-date" class="form-label mt-2"></label>
-              <div class="input-group mt-3">
-                <span class="input-group-text">
-                  <i class="bi bi-calendar-event-fill"></i>
-                </span>
-                <input type="date" class="form-control" id="due-date">
-              </div>
-
-        </div>
-
-
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
-        </div>
+<!-- Register Modal -->
+<div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="reg-modal-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reg-modal-label">Registration Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <label for="reg-email" class="form-label">Your email address:</label>
+        <input type="email" class="form-control" id="reg-email" placeholder="e.g. mario@example.com">
+        <label for="reg-name" class="form-label mt-3">Your Name:</label>
+        <input type="text" class="form-control" id="reg-name" placeholder="e.g. John">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
+</div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
